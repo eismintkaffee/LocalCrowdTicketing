@@ -10,7 +10,7 @@ may also need to enable "therubyrace" in gemfile
 
 migrate database by using: rake db:migrate
 
-to run project do: rails s
+to run project do  rails s
  	
 open in localhost:3000
 
