@@ -1,0 +1,38 @@
+<%- model_class = Pticket -%>
+<div class="page-header">
+  <h1><%=t 'Purchased Tickets', :default => model_class.model_name.human.pluralize.titleize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:eventName) %></th>
+      <th><%= model_class.human_attribute_name(:quantity) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @ptickets.each do |pticket| %>
+      <tr>
+        <td><%= link_to pticket.id, pticket_path(pticket) %></td>
+        <td><%= pticket.eventName %></td>
+        <td><%= pticket.quantity %></td>
+        <td><%=l pticket.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_pticket_path(pticket), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      pticket_path(pticket),
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to t('Buy', :default => t("helpers.links.new")),
+            new_pticket_path,
+            :class => 'btn btn-primary' %>

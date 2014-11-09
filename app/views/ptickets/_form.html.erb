@@ -1,0 +1,16 @@
+<%= form_for (@ptickets) do |f| %>
+
+  <div class="name">
+   <%= f.label :eventName %><br>
+   <%= f.text_field :eventName %>
+  </div>
+ 
+ <div class="quantity">
+   <%= f.label :quantity %><br>
+   <%= f.text_field :quantity %>
+  </div>
+  
+  <div class="actions">
+  <%= f.submit %>
+  </div>
+<% end %>

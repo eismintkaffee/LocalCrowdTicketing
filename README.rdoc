@@ -1,0 +1,15 @@
+== README
+
+Requirements for setting up this Project
+
+-ruby 2.0 or higher
+-install dependendcies by doing : bundle install
+(may also need to enable "therubyrace" in gemfile
+-migrate database by using: rake db:migrate
+-to run project do: rails s
+ 	and open in localhost:3000
+
+**NOTE: Work in Progress
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.

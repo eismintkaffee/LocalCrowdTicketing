@@ -1,0 +1,13 @@
+
+<p>
+  <h1>Purchased tickets for this event</h1>
+</p>
+
+<p>
+ <h2><strong>Quantity:</strong>
+  <%= @ptickets.quantity %>
+</h2>
+</p>
+
+<%= link_to 'Edit', edit_pticket_path(@ptickets) %> |
+<%= link_to 'Back', ptickets_path %>

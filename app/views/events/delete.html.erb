@@ -1,0 +1,17 @@
+<h1>Events#delete</h1>
+<p>Find me in app/views/events/delete.html.erb</p>
+<p>
+  <strong>Name:</strong>
+  <%= @event.event_name %>
+</p>
+<p>
+  <strong>:</strong>
+  <%= @event.description %>
+</p>
+
+<p>
+	<br>
+	<img src= <%= @event.thumburl %> 
+	<br>
+</p>
+<%= link_to 'Back', events_path %>

@@ -1,0 +1,31 @@
+<h1>Tickets#index</h1>
+<p>Find me in app/views/tickets/index.html.erb</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tickets Booked</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ticketss.each do |tickets| %>
+      <tr>
+      	<td><%= ticket.Event_name %></td>
+        <td><%= ticket.quantity %></td>
+        
+    
+        <td><%= link_to 'Show', tickets %></td>
+        <td><%= link_to 'Edit', edit_tickets_path(tickets) %></td>
+        <td><%= link_to 'Delete', ticketss_delete_path(:id => tickets.id) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+
+<%= link_to 'New Category', new_tickets_path %>
+
+
+
