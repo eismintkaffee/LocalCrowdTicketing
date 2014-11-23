@@ -37,13 +37,6 @@ ActiveRecord::Schema.define(version: 20141109030903) do
     t.datetime "updated_at"
   end
 
-  create_table "tickets", force: true do |t|
-    t.integer  "quantity"
-    t.string   "Event_Name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
