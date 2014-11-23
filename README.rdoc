@@ -14,7 +14,7 @@ to run project do  rails s
  	
 open in localhost:3000
 
-**NOTE: Work in Progress
+**NOTE: Work in Progress: Testing
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
