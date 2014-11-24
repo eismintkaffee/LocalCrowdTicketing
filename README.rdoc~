@@ -1,0 +1,38 @@
+== README
+
+Requirements for setting up this Project
+
+-ruby 2.0 or higher
+
+install dependendcies by doing : bundle install
+
+may also need to enable "therubyrace" in gemfile
+
+migrate database by using: rake db:migrate
+
+to run project do  rails s
+ 	
+open in localhost:3000
+
+To run unit test:
+
+-run bundle exec rake test
+
+To test cases:
+
+-add Selenium IDE to firefox
+
+-get test cases from testCase folder
+
+-run project at rails s -e test -p 3001
+
+-add test cases to Selenium IDE
+
+-run cases
+
+**NOTE: Work in Progress: Testing
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+Group 33: Jialiang Tan, Yanzhu Yin, Tiffany Ulep
