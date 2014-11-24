@@ -5,4 +5,8 @@ class DashboardController < ApplicationController
 		
 	end
 
+	def show
+		redirect_to(:action => 'index')
+	end
+
 end

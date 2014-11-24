@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+
   resources :dashboard do
     resources :events
   end
@@ -36,6 +37,8 @@ Rails.application.routes.draw do
   :events_delete
 
   resources :home
+  resources :pages
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

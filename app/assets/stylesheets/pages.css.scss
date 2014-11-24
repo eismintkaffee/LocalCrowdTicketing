@@ -1,3 +1,23 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.bg {
+  background: url('/assets/images/beach 2.jpg') no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.jumbotron {
+  background:url('/assets/images/beach 2.jpg') no-repeat center center;
+  margin-bottom: 0px;
+  height: 350px;
+  color: grey;
+  border: 1px;
+  
+}
+

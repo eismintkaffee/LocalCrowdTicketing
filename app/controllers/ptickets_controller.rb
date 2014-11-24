@@ -1,5 +1,5 @@
 class PticketsController < ApplicationController
-  before_filter :authenticate_user!
+  before_filter :authenticate_user! #this is so they cannot access the page
   def index
     @ptickets = Pticket.all
   end
@@ -36,11 +36,11 @@ class PticketsController < ApplicationController
  end
 
  def delete
-   @ptickets = pticket.find(params[:id])
+   @ptickets = Pticket.find(params[:id])
  end
  
  def destroy
-   pticket = pticket.find(params[:id]).destroy
+   pticket = Pticket.find(params[:id]).destroy
    redirect_to(:action => 'index')
  end
   
